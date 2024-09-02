@@ -1,13 +1,14 @@
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+        "cpus": 4
+    },
     "waitFor": "onCreateCommand",
     "updateContentCommand": "pip install -r requirements.txt",
     "postCreateCommand": "",
     "customizations": {
         "codespaces": {
-            "openFiles": [
-                "notebooks/welcome.ipynb"
-            ]
+            "openFiles": []
         },
         "vscode": {
             "extensions": [
